@@ -91,6 +91,12 @@ STEP -3 NAVBAR BOOTSTRAP-4:
         </div>
     </nav>
 
+STEP-4: INSERT SOCIAL LINK ICONS USING FONTAWSEOME
+
+STEP-5: USING VECTOR IMAGE, ADD ICON FOR TITLE
+
+
+########--------------------------------ABOUT-------------------------------------------######################
 
 
 
