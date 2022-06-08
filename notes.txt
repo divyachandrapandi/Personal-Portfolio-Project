@@ -1,0 +1,96 @@
+STEP-1:
+INDEX - OBJECTIVE:
+        ~ TO CREATE A BACKGROUND IMAGE
+        ~ A NAME TITLE
+        ~ HIRE ME BUTTTON
+        ~ NAVBAR
+        ~ FOOTER LINKS FOR SOCIAL PLATFORM
+
+1. CREATED A DIV CALLED .bg-container WITH WIDTH AND HEIGHT 100% --> NO DIMENSION FOR DIV
+
+2. SO ADD BORDER FOR THE DIV --> DIV APPEARS WITH BORDER AND EXTEND THROUGH VIEW PORT
+
+3. ADD HEIGHT 100% AND MARGIN ZERO FOR BOTH HTML, BODY
+         ~ ADDING HEIGHT 100% TO DIV WHICH IS CHILD TO BODY, HTML WILL EXTEND TO THE HEIGHT OF THE PARENT
+         IE TILL BOTTOM EDGE
+
+4. ISSUE: SCROLL BAR APPEARS, DIV EXTEND BEYOND THE PAGE
+    SOLUTION: ADD  OVERFLOW:HIDDEN IN PARENT CLASS IE HTML,BODY
+
+5. ISSUE: BORDER IN RIGHT AND BOTTOM IS INVISIBLE
+   REASON: WHEN WIDTH OF ELEMENT IS 100%, AND BORDER IS GIVEN IT IS ACTUALLY
+            ELEMENT WIDTH + BORDER WIDTH -->EXCEEDS VIEWPORT WIDTH
+   SOLUTION: ADD BOX-SIZING - BORDER-BOX TO INCLUDE BORDER WIDTH TO ELEMENT WIDTH
+
+6. ADD IMAGE TO STYLEING AS BACKGROUND IMAGE USING URL_FOR IN FLASK
+
+7. ISSUE: THE IMAGE IS NOT FITTED BUT EXPANDED
+
+8. CONTAIN: FIT THE WIDTH AND STETCH HEIGHT
+    COVER: FIT THE HEIGHT AND STRETCH WIDTH
+    CENTER: CENTER THE FEATURE IN IMAGE ALSO TOP LEFT, BOTTOM RIGHT
+
+9. IF IMAGE HAS LESS WIDTH OR LESS HEIGHT ACCORDINGLY CHOOSE THE BACKGROUND-SIZE ATTRIBUTE
+
+STEP -2 INTRO CONTAINER:
+
+1. USE DIVE AS CONTAINER-FLUID INSIDE THE BG-CONTAINER
+
+2. USE H1, H2 TO TYPE AND STYLED WITH MARGIN PERCENTAGE AND POSITION ABSOLUTE INSIDE THE BGCONTAINER
+
+3. BUTTON - BOOTSTRAP BUTTON WITH MARGI TO ADJUST ALIGNMENT AS WITH THE TEXT
+         BUTTON-LG TO LARGE BUTTON
+
+STEP -3 NAVBAR BOOTSTRAP-4:
+
+1. structure of navbar:
+    LINE-1:
+         <nav class="navbar navbar-expand-lg navbar-dark bg-light">
+         ELEMENTS:
+            ~ BY DEFAULT THE NAVBAR ELEMENTS STACKS VERTICALLY, BUT THIS navbar-expand-lg STOCKS IT VERTICALLY
+            ~ navabr-dark - THEME FOR ELEMENT
+            ~ bg-dark - THEMER FOR BG
+
+    LINE2:
+        <a class="navbar-brand" href="#">Portfolio</a>
+        ELEMENTS:
+            ~ navbar-brand is far showing the brand elemtn
+
+    LINE3:
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        ELEMENTS:
+            ~ TOGGLER IS USED TO COLLAPSE THE NAVBAR TO HAMBURGER ICON FOR RESPECTIVE VIEWPORT SIZE
+            ~ ID OF THE DATATARGET SHOULD MATCH
+            ~ SPAN ELEMENT IS THE HAMBURGER ICON
+
+    LINE4:
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        ELEMENTS:
+            ~ ELEMENTS NEED TO COLLAPSE SHOULD BE INSIDE THIS CONTAINER
+
+    LINE5:
+        ELEMENTS:
+            ~ THIS ELEMENT ARRANGES MR - FROM RIGHT, ML- FROM LEFT
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Academia </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pro skills </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
