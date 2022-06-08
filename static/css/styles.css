@@ -20,29 +20,31 @@ box-sizing: border-box;
 
 
 }
-h1,h2,p{
-color:white;}
-h1{
-font-size:5rem;}
-h2{
+h1,h2,p
+{
+color:white;
+line-height:1.25;
+}
+h1
+{
+font-family:'Libre Baskerville', serif;
+font-size:5rem;
+}
+h2
+{
+font-family:'Merriweather', serif;
 font-size:4rem;
-line-height:1.5;}
+}
+
+.hire-button
+{
+font-family:'Libre Baskerville', serif;
+margin-top:8px;
+font-size:2rem;
+}
 .intro{
 margin:18%;
 height:auto;
 position:absolute;
 z-index:1;
 }
-/*
-    min-height:100%;
-    min-width:100%;
-    height:auto;
-    width:auto;
-    position:absolute;
-    left:20px;
-    padding: 10px 10px;
-    margin:auto;
-    z-index:0;}
-    /*/
-
-
