@@ -4,6 +4,7 @@ html,body{
    background-color: black;
    overflow:hidden;
    position:relative;
+   font-family:'Libre Baskerville', serif;
 }
 
 
@@ -20,9 +21,7 @@ box-sizing: border-box;
 
 
 }
-a{
-font-size:1.5rem;
-}
+
 h1,h2,p
 {
 color:white;
@@ -51,4 +50,16 @@ margin:12% 18% 18% 12%;
 height:auto;
 position:absolute;
 z-index:2;
+}
+
+.mybrand{
+margin:1rem 0  0 2rem;
+font-size:2rem;
+}
+
+.mylinks{
+margin-right:3rem;
+}
+.mypage{
+font-size: 1.25rem;
 }
