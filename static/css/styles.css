@@ -252,3 +252,19 @@ line-height:2;}
 .edu-container{
 width:50%;
 }
+
+.contact-container{
+
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+width:100%;
+height:100%;
+border: 0px solid black;
+box-sizing: border-box;
+}
+
+.form-container{
+width:50%;
+margin: auto;
+padding: 150px;}
