@@ -2,9 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My Portfolio</title>
+    <link rel="icon" href="static/images/icon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Pacifico&display=swap"
+          rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <style>
+    body {overflow:scroll;}
+
+    </style>
 </head>
 <body>
 
+
+<div class="skills-header container-fluid" style="background-image: url({{ url_for('static', filename='/images/laptopfull.jpg')}});">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="mybrand navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="skills-toggle navbar-toggler-icon"> Index</span>
+        </button>
+        <div class="skills-nav collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('home')}}">Home </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="#">Academia </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <h1>Projects & Skills</h1>
+</div>
+<div class="project-container container-fluid">
+
+    <h3>Web Development</h3>
+    <div class="row grid-element">
+    <div class="col-lg-6">
+        <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
+            <img class="project-img" src="{{ url_for('static', filename='/images/portfolio.png')}}">
+        </a>
+        </div>
+        <div class="project-set col-lg-6">
+        <br>
+        <br>
+        <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
+            <h5>Building Portfolio</h5>
+        </a>
+        <p>Using Frontend language like HTML, CSS and Bootstrap Framework to build a nice responsive Webpage
+            for practicing advanced CSS techniques along with WTForms and Flask as Backend Server and hosted using
+            Heroku </p>
+    </div>
+        </div>
+    <div class="row grid-element">
+        <div class="col-lg-6">
+            <a href="https://divya-blog.herokuapp.com/">
+            <img class="project-img" src="{{ url_for('static', filename='/images/blog.png')}}">
+        </a>
+            </div>
+    <div class="project-set col-lg-6">
+
+        <br>
+        <br>
+        <a href="https://github.com/divyachandrapandi/RestFull_API_BLOG_with_authentication">
+            <h5>Creating RESTful Blog with Authentication</h5>
+        </a>
+        <p> A complete project involving Backend techniques using Flask, Jinja, sqlite3
+            and in Frontend Bootstrap for WTForms. To make RESTful blog that are editable and permitting the authentic
+            user
+            to comment or read the articles also creating admin-only decorator for performing add, delete, modify the
+            post</p>
+    </div>
+        </div>
+    <div class="row grid-element">
+        <div class="col-lg-6">
+            <a href="https://github.com/divyachandrapandi/tindog-Bootstrap-Elements">
+            <img class="project-img" src="{{ url_for('static', filename='/images/tindog.png')}}">
+        </a>
+            </div>
+    <div class="project-set col-lg-6">
+
+
+        <br>
+        <br>
+        <a href="https://github.com/divyachandrapandi/tindog-Bootstrap-Elements">
+            <h5> Making a Social Platform Webpage</h5>
+        </a>
+
+        <p> Using all Frontend technologies, created a webpage with idea for creating a fun dating app.
+            The Bootstrap components such as carousel, cards, containers, navbar are practiced and improvised</p>
+    </div>
+        </div>
+    <div class="row grid-element">
+         <div class="col-lg-6">
+             <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
+            <img class="project-img" src="{{ url_for('static', filename='/images/cafe.png')}}">
+        </a>
+             </div>
+    <div class="project-set col-lg-6">
+
+        <br>
+        <br>
+        <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
+            <h5> Practicing WTForm in Bootstrap Framework</h5>
+        </a>
+        <p> To add your favourite cafe spot into our webpage also rating their facilities like wifi strength, power
+            plugins,
+            tables, and ofcourse Coffee Price and Taste</p>
+    </div>
+        </div>
+    <div class="row grid-element">
+        <div class="col-lg-6">
+            <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
+           <img class="project-img" src="{{ url_for('static', filename='/images/top10movies.png')}}">
+        </a>
+            </div>
+    <div class="project-set col-lg-6">
+
+        <br>
+        <br>
+        <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
+           <h5> Building TOP10 Movie webpage</h5>
+        </a>
+
+        <p> To create site for favorite movies that are editable. We can update the review and rating of movie.
+            Used movie database API for movie informations, used Flip cards on hover to view the movie details
+            behind the movie poster</p>
+    </div>
+        </div>
+</div>
+
+
 </body>
-</html>
+{% include 'footer.html' %}

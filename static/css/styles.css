@@ -51,6 +51,7 @@ font-size:2rem;
 .mybrand{
 margin:1rem 0  0 2rem;
 font-size:2rem;
+color:white;
 }
 
 .mylinks{
@@ -128,3 +129,53 @@ text-align:right;
 margin-right:25px;
 margin-bottom:25px;
 }
+
+.skills-header{
+margin:0 auto;
+height:70%;
+width:100%;
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align:center;
+}
+.skills-header h1{
+font-family: 'Merriweather', serif;
+font-size:4rem;
+color:white;
+line-height:2;
+margin: 8%;
+}
+.skills-toggle{
+color:white;}
+.skills-nav ul li a {
+color: white;}
+
+.project-container{
+text-align:center;
+}
+.project-container h3{
+
+margin: 50px auto 50px;
+font-weight:900;
+font-size:2.5rem;
+text-decoration:underline;
+color: #7463F4;}
+
+.project-img{
+width:70%;}
+.project-set h5{
+color:#FF3AF3;
+text-decoration:underline;}
+.project-img:hover{
+opacity: 0.5;}
+
+.project-set{
+width:50%;
+margin:auto;
+text-align:left;}
+.project-set p {
+color: #13131A;}
+
+.grid-element{
+margin: 100px;}

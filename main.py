@@ -19,6 +19,10 @@ def home():
 @app.route('/about')
 def about():
     return render_template('about.html')
+
+@app.route('/skills')
+def skills():
+    return render_template('skills.html')
 # --------------------------------------------SERVER RUN-----------------------------------------#
 if __name__ == "__main__":
     app.run(host='192.168.68.101', port=5000,debug=True)
