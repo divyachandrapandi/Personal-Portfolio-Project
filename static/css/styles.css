@@ -147,9 +147,12 @@ line-height:2;
 margin: 8%;
 }
 .skills-toggle{
-color:white;}
+color:white;
+}
+
 .skills-nav ul li a {
-color: white;}
+color: white;
+}
 
 .project-container{
 text-align:center;
@@ -160,22 +163,92 @@ margin: 50px auto 50px;
 font-weight:900;
 font-size:2.5rem;
 text-decoration:underline;
-color: #7463F4;}
+color: #371B58;
+}
 
 .project-img{
-width:70%;}
+width:70%;
+margin:auto;
+}
 .project-set h5{
-color:#FF3AF3;
-text-decoration:underline;}
+color:#A91079;
+text-decoration:underline;
+font-weight:800;
+}
+
 .project-img:hover{
-opacity: 0.5;}
+opacity: 0.5;
+}
 
 .project-set{
 width:50%;
 margin:auto;
-text-align:left;}
+text-align:left;
+}
+
 .project-set p {
-color: #13131A;}
+color: #13131A;
+line-height:1.75;
+}
 
 .grid-element{
-margin: 100px;}
+margin: 100px;
+}
+
+.skills-container{
+line-height:1.75;
+font-size:1.05rem;
+width:50%;
+}
+.skills-container h5{
+font-size:2.5rem;
+font-weight:600;
+line-height:2;
+text-align:center;
+}
+
+.skills-list{
+text-align:left;
+}
+.skills-list h6{
+fonr-weight:800;
+font-size:1.5rem;
+line-height:2;
+}
+.academia-header{
+margin:0 auto;
+height:70%;
+width:100%;
+background-size:cover;
+background-repeat: no-repeat;
+background-position: center;
+text-align:center;
+}
+.academia-header h1{
+font-family: 'Merriweather', serif;
+font-size:4rem;
+color:white;
+line-height:2;
+margin: 8%;
+}
+
+.summary{
+width:50%;
+margin:100px auto 50px;
+
+}
+
+.summary h6{
+line-height:1.5;
+font-size:1.5rem;
+text-align:center;}
+
+.edu-container h6{
+text-align:center;
+font-size:2rem;
+color: #371B58;
+line-height:2;}
+
+.edu-container{
+width:50%;
+}

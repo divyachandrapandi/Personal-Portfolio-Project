@@ -22,19 +22,22 @@
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
     <style>
-    body {overflow:scroll;}
+    body {overflow:scroll;
+    background-color:#DAEAF1;}
+
 
     </style>
 </head>
 <body>
 
 
-<div class="skills-header container-fluid" style="background-image: url({{ url_for('static', filename='/images/laptopfull.jpg')}});">
+<div class="skills-header container-fluid"
+     style="background-image: url({{ url_for('static', filename='/images/laptopfull.jpg')}});">
     <nav class="navbar navbar-expand-lg ">
-        <a class="mybrand navbar-brand" href="#">Portfolio</a>
+        <a class="mybrand navbar-brand" href="{{url_for('home')}}">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="skills-toggle navbar-toggler-icon"> Index</span>
+            <span class="skills-toggle navbar-toggler-icon">|||</span>
         </button>
         <div class="skills-nav collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -46,7 +49,7 @@
                     <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
                 </li>
                 <li class="mylinks nav-item ">
-                    <a class="mypage nav-link" href="#">Academia </a>
+                    <a class="mypage nav-link" href="{{url_for('academia')}}">Academia </a>
                 </li>
                 <li class="mylinks nav-item ">
                     <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>
@@ -61,100 +64,178 @@
 
     <h3>Web Development</h3>
     <div class="row grid-element">
-    <div class="col-lg-6">
-        <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
-            <img class="project-img" src="{{ url_for('static', filename='/images/portfolio.png')}}">
-        </a>
+        <div class="col-lg-6">
+            <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
+                <img class="project-img" src="{{ url_for('static', filename='/images/portfolio.png')}}">
+            </a>
         </div>
         <div class="project-set col-lg-6">
-        <br>
-        <br>
-        <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
-            <h5>Building Portfolio</h5>
-        </a>
-        <p>Using Frontend language like HTML, CSS and Bootstrap Framework to build a nice responsive Webpage
-            for practicing advanced CSS techniques along with WTForms and Flask as Backend Server and hosted using
-            Heroku </p>
-    </div>
+            <br>
+            <br>
+            <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
+                <h5>Building Portfolio</h5>
+            </a>
+            <p>Using Frontend language like HTML, CSS and Bootstrap Framework to build a nice responsive Webpage
+                for practicing advanced CSS techniques along with WTForms and Flask as Backend Server and hosted using
+                Heroku </p>
         </div>
+    </div>
     <div class="row grid-element">
         <div class="col-lg-6">
             <a href="https://divya-blog.herokuapp.com/">
-            <img class="project-img" src="{{ url_for('static', filename='/images/blog.png')}}">
-        </a>
-            </div>
-    <div class="project-set col-lg-6">
-
-        <br>
-        <br>
-        <a href="https://github.com/divyachandrapandi/RestFull_API_BLOG_with_authentication">
-            <h5>Creating RESTful Blog with Authentication</h5>
-        </a>
-        <p> A complete project involving Backend techniques using Flask, Jinja, sqlite3
-            and in Frontend Bootstrap for WTForms. To make RESTful blog that are editable and permitting the authentic
-            user
-            to comment or read the articles also creating admin-only decorator for performing add, delete, modify the
-            post</p>
-    </div>
+                <img class="project-img" src="{{ url_for('static', filename='/images/blog.png')}}">
+            </a>
         </div>
+        <div class="project-set col-lg-6">
+
+            <br>
+            <br>
+            <a href="https://github.com/divyachandrapandi/RestFull_API_BLOG_with_authentication">
+                <h5>Creating RESTful Blog with Authentication</h5>
+            </a>
+            <p> A complete project involving Backend techniques using Flask, Jinja, sqlite3
+                and in Frontend Bootstrap for WTForms. To make RESTful blog that are editable and permitting the
+                authentic
+                user
+                to comment or read the articles also creating admin-only decorator for performing add, delete, modify
+                the
+                post</p>
+        </div>
+    </div>
     <div class="row grid-element">
         <div class="col-lg-6">
             <a href="https://github.com/divyachandrapandi/tindog-Bootstrap-Elements">
-            <img class="project-img" src="{{ url_for('static', filename='/images/tindog.png')}}">
-        </a>
-            </div>
-    <div class="project-set col-lg-6">
-
-
-        <br>
-        <br>
-        <a href="https://github.com/divyachandrapandi/tindog-Bootstrap-Elements">
-            <h5> Making a Social Platform Webpage</h5>
-        </a>
-
-        <p> Using all Frontend technologies, created a webpage with idea for creating a fun dating app.
-            The Bootstrap components such as carousel, cards, containers, navbar are practiced and improvised</p>
-    </div>
+                <img class="project-img" src="{{ url_for('static', filename='/images/tindog.png')}}">
+            </a>
         </div>
-    <div class="row grid-element">
-         <div class="col-lg-6">
-             <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
-            <img class="project-img" src="{{ url_for('static', filename='/images/cafe.png')}}">
-        </a>
-             </div>
-    <div class="project-set col-lg-6">
+        <div class="project-set col-lg-6">
 
-        <br>
-        <br>
-        <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
-            <h5> Practicing WTForm in Bootstrap Framework</h5>
-        </a>
-        <p> To add your favourite cafe spot into our webpage also rating their facilities like wifi strength, power
-            plugins,
-            tables, and ofcourse Coffee Price and Taste</p>
-    </div>
+
+            <br>
+            <br>
+            <a href="https://github.com/divyachandrapandi/tindog-Bootstrap-Elements">
+                <h5> Making a Social Platform Webpage</h5>
+            </a>
+
+            <p> Using all Frontend technologies, created a webpage with idea for creating a fun dating app.
+                The Bootstrap components such as carousel, cards, containers, navbar are practiced and improvised</p>
         </div>
+    </div>
     <div class="row grid-element">
         <div class="col-lg-6">
-            <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
-           <img class="project-img" src="{{ url_for('static', filename='/images/top10movies.png')}}">
-        </a>
-            </div>
-    <div class="project-set col-lg-6">
-
-        <br>
-        <br>
-        <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
-           <h5> Building TOP10 Movie webpage</h5>
-        </a>
-
-        <p> To create site for favorite movies that are editable. We can update the review and rating of movie.
-            Used movie database API for movie informations, used Flip cards on hover to view the movie details
-            behind the movie poster</p>
-    </div>
+            <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
+                <img class="project-img" src="{{ url_for('static', filename='/images/cafe.png')}}">
+            </a>
         </div>
+        <div class="project-set col-lg-6">
+
+            <br>
+            <br>
+            <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
+                <h5> Practicing WTForm in Bootstrap Framework</h5>
+            </a>
+            <p> To add your favourite cafe spot into our webpage also rating their facilities like wifi strength, power
+                plugins,
+                tables, and ofcourse Coffee Price and Taste</p>
+        </div>
+    </div>
+    <div class="row grid-element">
+        <div class="col-lg-6">
+            <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="2000"
+                 data-pause="hover">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
+                            <img class="project-img d-block"
+                                 src="{{ url_for('static', filename='/images/top10movies.png')}}" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
+                            <img class="project-img d-block"
+                                 src="{{ url_for('static', filename='/images/top10movie1.png')}}" alt="Second slide">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="project-set col-lg-6">
+
+            <br>
+            <br>
+            <a href="https://github.com/divyachandrapandi/TOP10-MOVIES-WEBSITE">
+                <h5> Building TOP10 Movie webpage</h5>
+            </a>
+
+            <p> To create site for favorite movies that are editable. We can update the review and rating of movie.
+                Used movie database API for movie informations, used Flip cards on hover to view the movie details
+                behind the movie poster</p>
+        </div>
+    </div>
 </div>
 
+<div class="skills-container container-fluid">
+    <h5>Professional Skills</h5>
+    <p> I have experimented python, its functionality, dynamic usage, user friendly nature into a set of my
+        own projects.I have build this Portfolio website using HTML, CSS and Bootstrap Framework and Flask.
+        I'm working on becoming <strong>A Full-Stack developer</strong> and I'm in the road to become
+        one almost near the finish line.I am self-taught coder wishing to get an opportunity to work
+        with a team to face real time challenges. Maybe I am fresher in IT but I'm not exclusion for imposter
+        syndrome, though facing hard situation is a self-check to success😉.
+        <br><br>
+        Over 25+ Projects and Task in Python development in GitHub, I practiced and expertised by consistent learning.
+    </p>
+
+    <div class="skills-list">
+        <h6>Backend Development using Flask</h6>
+        <ul>
+            <li>
+                Flask Authentication using Flask Login Library
+            </li>
+            <li>WTForms using Flask-Bootstrap Library</li>
+            <li>Rest API architecture</li>
+            <li>Rendering Templates and Parsing Endpoints</li>
+            <li>API Testing using Postman</li>
+            <li>Jinja Language to perform Python code in Templates</li>
+            <li>SQLALchemy for Relational Database Management</li>
+            <li>HTTP Request Handling</li>
+        </ul>
+        <h6>Front-end Development</h6>
+        <ul>
+            <li>HTML5, CSS3 for structuring and styling</li>
+            <li>Bootstrap Framework </li>
+            <li> UI/UX Understanding for Web Design</li>
+        </ul>
+        <h6>API Request Library</h6>
+        <ul>
+
+            <li>Flight Deal Finder using API</li>
+            <li>Workout Tracking using Google Sheet API</li>
+            <li>SMS Alert for Rain, ISS location Finder, Wish sender</li>
+
+            <li>GUI Quiz app</li>
+        </ul>
+        <h6>Python Developement</h6>
+        <ul>
+            <li>Tkinter for Pomodoro timer, Password Generator, Flash Card</li>
+            <li>Game developement - Snake, Pong, Turtle crossing Using Turtle module</li>
+            <li> Python scripting and automation</li>
+        </ul>
+        <h6>Web Scraping and automation</h6>
+        <ul>
+            <li>Selenium for automatic web testing</li>
+            <li>Auto-tinder swiper, Auto Job Application, Cookie Clicker</li>
+            <li>Using Beautiful Soup - Amazon Sale Alert</li>
+            <li>Spotipy for creating playlist in spotify</li>
+        </ul>
+        <h6>Version Control using Github</h6>
+        <h6>Heroku For hosting Page</h6>
+        <h6>Postgres SQL for Database Management</h6>
+        <h6>Data Analysis and Data Visualization  using Python Library</h6>
+    </div>
+
+</div>
 
 </body>
 {% include 'footer.html' %}

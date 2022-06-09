@@ -4,7 +4,7 @@
 
 <div class="about-container container-fluid" style="background-image: url({{ url_for('static', filename='/images/flower.jpg')}});">
          <nav class="navbar navbar-expand-lg navbar-dark ">
-        <a class="mybrand navbar-brand" href="#">Portfolio</a>
+        <a class="mybrand navbar-brand" href="{{url_for('home')}}">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
                     <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
                 </li>
                 <li class="mylinks nav-item ">
-                    <a class="mypage nav-link" href="#">Academia </a>
+                    <a class="mypage nav-link" href="{{url_for('academia')}}">Academia </a>
                 </li>
                 <li class="mylinks nav-item ">
                     <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>

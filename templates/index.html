@@ -4,7 +4,7 @@
 
 <div class="bg-container" style="background-image: url({{ url_for('static', filename='/images/index.jpg')}});">
     <nav class="navbar navbar-expand-lg navbar-dark ">
-        <a class="mybrand navbar-brand" href="#">Portfolio</a>
+        <a class="mybrand navbar-brand" href="{{url_for('home')}}">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -19,7 +19,7 @@
                     <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
                 </li>
                 <li class="mylinks nav-item ">
-                    <a class="mypage nav-link" href="#">Academia </a>
+                    <a class="mypage nav-link" href="{{url_for('academia')}}">Academia </a>
                 </li>
                 <li class="mylinks nav-item ">
                     <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>
@@ -31,7 +31,8 @@
     <div class="intro container-fluid">
         <h2 class="index-h2">I'm Divya</h2>
         <h1 class="index-h1">Web Developer</h1>
-        <button type="button" class="hire-button btn btn-outline-light btn-lg">Hire Me</button>
+        <a class="hire-button btn btn-outline-light btn-lg" href="{{url_for('contact')}}">Hire Me</a>
+<!--        <button type="button" class="hire-button btn btn-outline-light btn-lg">Hire Me</button>-->
         <div class="footer container-fluid">
           <i class="footer-icon fa-brands fa-github"></i>
           <i class="footer-icon fa-brands fa-linkedin"></i>

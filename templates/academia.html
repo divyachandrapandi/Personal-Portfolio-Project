@@ -1,10 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>My Portfolio</title>
+    <link rel="icon" href="static/images/icon.png?v=2" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Pacifico&display=swap"
+          rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+     <style>
+    body {overflow:scroll;
+    }
+
+
+    </style>
 </head>
 <body>
 
+<div class="academia-header container-fluid"
+     style="background-image: url({{ url_for('static', filename='/images/gate.jpg')}});">
+    <nav class="navbar navbar-expand-lg ">
+        <a class="mybrand navbar-brand" href="{{url_for('home')}}">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="skills-toggle navbar-toggler-icon"> Index</span>
+        </button>
+        <div class="skills-nav collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('home')}}">Home </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('academia')}}">Academia </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <h1>Education</h1>
+</div>
+    <div class="summary container-fluid">
+      <h6> Born in a middle-class family, my parents always quote me
+        that "Education is a Key for another dimension to World". True, Reading tools
+        to transform us entirely. I studied well, scored obviously good percentage in school.
+        I went to College 12 hours far from home, though got hostel life as memories. Aboveall, I am
+        honored to make my parents proud being a <strong>University topper 2017</strong> received
+        gold medal from the honorary Governor of TamilNadu.
+
+      </h6>
+    </div>
+<div class="edu-container container-fluid">
+    <div class="schooling">
+      <h6>2010-2011</h6>
+      <p>I graduated the high school with 94% score from Holy Family Convent, Chennai</p>
+      <h6>2012-2013</h6>
+      <p>I selected Bio-Math stream abd Finished my higher Secondary with 90% score from the same one and only Holy Family Convent, Chennai</p>
+    </div>
+    <div class="graduate">
+      <h6>2013-2017</h6>
+      <p>Graduated B.E Geoinformatics from <strong>Anna University Tirunelveli</strong> with 8.6 CGPA.</p>
+      <p>The concepts of Geographic Information Science, Remote Sensing, Geodetic surveying are the main topics.</p>
+      <h6>2017-2018</h6>
+      <p>I got placed in <strong>Anna University CEG campus, Chennai</strong> for M.Tech Geoinformatics and I got an opportunity to pursue Masters in Germany.</p>
+      <h6>2018-2021</h6>
+      <p>Went to <strong>Technical University of Berlin</strong> for M.Sc Geoinformatics
+      Though I am unable to complete the degree due to COVID situation, I consider to resume the degree atleast after five years.
+      <strong>[Life lesson]</strong>Knowledge attained not only through Degrees but also Experience from real-time projects</p>
+
+
+    </div>
+    <div class="reason">
+      <h6>Why interest in Coding?</h6>
+      <p>You may wonder "from a Geoinformatics graduate to a Coder".......<br>
+      I started to code for supporting my master degree. I realized, I can code.
+
+      I learned through online purchased courses and right now I am about to finish a Python BootCamp.
+          I pretty confident to code.</p>
+
+
+    </div>
+    </div>
 </body>
 </html>

@@ -114,6 +114,14 @@ STEP-5 ADD NAVBAR
 
 ##########--------------------------------PROSKILLS------------------------------------##############################
 
+STEP-1 HEADER IS STYLED WITH BACJGROUND IMAGE, WIDTH TO 70% AND NAVABAR INSERTED
 
+STEP-2 USE CONTAINER-FLUID AND GRID ELEMNTS TO LAYOUT THE PROJECTS
+
+STEP-3 USED CAROUSEL FOR DISPLAY
+
+STEP-4 LISTED THE SKILLS
+
+########------------------------------academia---------------------------------------###########################
 
 
