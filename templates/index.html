@@ -1,4 +1,5 @@
 {% include 'header.html' %}
+
 <body>
 
 <div class="bg-container" style="background-image: url({{ url_for('static', filename='/images/index.jpg')}});">
@@ -28,8 +29,8 @@
         </div>
     </nav>
     <div class="intro container-fluid">
-        <h2>I'm Divya</h2>
-        <h1>Web Developer</h1>
+        <h2 class="index-h2">I'm Divya</h2>
+        <h1 class="index-h1">Web Developer</h1>
         <button type="button" class="hire-button btn btn-outline-light btn-lg">Hire Me</button>
         <div class="footer container-fluid">
           <i class="footer-icon fa-brands fa-github"></i>
@@ -38,6 +39,7 @@
 
         </div>
     </div>
+    <p class="copyright">© Copyright {{year}} Divya Chandrapandi</p>
 </div>
 
 <!--<picture class="index-image">-->

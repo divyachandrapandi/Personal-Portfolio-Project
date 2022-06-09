@@ -1,7 +1,50 @@
 {% include 'header.html' %}
 
 <body>
-<h1>hi</h1>
+
+<div class="about-container container-fluid" style="background-image: url({{ url_for('static', filename='/images/flower.jpg')}});">
+         <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="mybrand navbar-brand" href="#">Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('home')}}">Home </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="#">Academia </a>
+                </li>
+                <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="#">Pro skills </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+        <img class = "profile-pic" src="{{ url_for('static', filename='/images/profile-pic.png')}}" alt="profile-pic">
+
+    <div class="letter-container container">
+        <br><br>
+
+        <h2>Hello</h2>
+        <p class="letter-para"> Vanakkam All!!! I'm a chennai based Python Developer. For a few years,
+            I was in quest for my passion and privileged to announce, Coding is my happiness! I started with Python,
+            became my first love. My three secret Mantras - Punctuality, Time Management, Sincerity. Now, I found my
+            career direction, my next phase is to set myself in a position to explore new challenges and become wiser.
+            To grow as a Full-Stack Web developer, is a process of consistency and efficiency. Once a hard phase thought
+            me <strong>Perseverance serves you even delayed</strong>. Anything in this world
+            values less than TIME. I have no intention to waste it anymore. And So I'm learning.....</p>
+        <h3>Divya Chandrapandi</h3>
+    </div>
+
+</div>
 </body>
 
 

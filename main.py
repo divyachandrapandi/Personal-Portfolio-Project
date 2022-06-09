@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
+from datetime import datetime
 from dotenv import load_dotenv
 import os
 
@@ -10,7 +11,9 @@ Bootstrap(app)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    year = datetime.now().year
+
+    return render_template('index.html', year=year)
 
 
 @app.route('/about')
