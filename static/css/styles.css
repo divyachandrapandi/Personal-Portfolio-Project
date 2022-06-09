@@ -268,3 +268,11 @@ box-sizing: border-box;
 width:50%;
 margin: auto;
 padding: 150px;}
+
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.4);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.5px);
+-webkit-backdrop-filter: blur(7.5px);
+border: 1px solid rgba(255, 255, 255, 1);
