@@ -136,3 +136,6 @@ font-family: 'Sacramento', cursive;
 background: rgb(225,122,250);
 background: linear-gradient(90deg, rgba(225,122,250,0.8130602582830007) 11%, rgba(149,108,200,0.9559174011401436) 57%, rgba(235,138,244,1) 90%);
 
+background: rgb(255,111,174);
+background: radial-gradient(circle, rgba(255,111,174,1) 0%, rgba(232,75,75,1) 56%, rgba(166,77,146,1) 100%);
+
