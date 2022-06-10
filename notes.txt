@@ -124,4 +124,12 @@ STEP-4 LISTED THE SKILLS
 
 ########------------------------------academia---------------------------------------###########################
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&family=League+Spartan&family=Roboto:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+
+font-family: 'Dongle', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive;
 
