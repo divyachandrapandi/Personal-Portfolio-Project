@@ -139,3 +139,6 @@ background: linear-gradient(90deg, rgba(225,122,250,0.8130602582830007) 11%, rgb
 background: rgb(255,111,174);
 background: radial-gradient(circle, rgba(255,111,174,1) 0%, rgba(232,75,75,1) 56%, rgba(166,77,146,1) 100%);
 
+background: rgb(207,255,236);
+background: linear-gradient(90deg, rgba(207,255,236,1) 0%, rgba(227,167,255,1) 56%, rgba(254,208,255,1) 100%);
+
