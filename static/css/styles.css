@@ -171,7 +171,7 @@ font-size:1.5rem;
 .skills-header{
 font-family: "League Spartan", sans-serif;
 margin:0 auto;
-background-color:#2E0249;
+background-color:#7A0BC0;
 text-align:center;
 }
 
@@ -179,23 +179,30 @@ text-align:center;
 text-shadow:2px 2px white;
 font-size:4rem;
 color:white;
+margin-bottom:0;
+
 }
 
 .project-container{
 font-family: 'League Spartan', sans-serif;
 text-align:center;
+background: rgb(225,122,250);
+background: linear-gradient(90deg, rgba(225,122,250,0.8130602582830007) 11%, rgba(149,108,200,0.9559174011401436) 57%, rgba(235,138,244,1) 90%);
+
 }
 
 .project-container h3{
 font-family: 'League Spartan', sans-serif;
-margin: 50px auto 50px;
-font-weight:900;
+margin:auto;
+font-weight:500;
 font-size:2.5rem;
 text-shadow:2px 2px black;
+padding-top:50px;
 }
 
 .project-table{
 margin: 4%;
+
 }
 
 .project-img{
@@ -259,11 +266,11 @@ font-family: 'Dongle', sans-serif;
 line-height:1.5;
 font-size:2rem;
 width:100%;
-background-color:pink;
+
 color:#5534A5;
 }
 
-.skills-container h5{
+.skills-intro h5{
 font-family: 'League Spartan', sans-serif;
 font-size:2.5rem;
 font-weight:600;
@@ -271,10 +278,14 @@ line-height:1;
 text-align:center;
 padding:50px 50px;
 }
+.skills-intro {
+background-color:white;
+}
 
 .skills-list{
 text-align:left;
 margin:auto;
+color:white;
 }
 
 .skills-list h6{
@@ -282,9 +293,11 @@ font-family:font-family: 'League Spartan', sans-serif;
 fonr-weight:800;
 font-size:2.25rem;
 line-height:2;
-color: #2E0249;
+color: white;
 }
-
+.skill-bg{
+background: rgb(255,111,174);
+background: radial-gradient(circle, rgba(255,111,174,1) 0%, rgba(232,75,75,1) 56%, rgba(166,77,146,1) 100%);}
 /*-----------------media skills------------------------------*/
 
 @media (max-width:900px)
@@ -305,7 +318,7 @@ line-height:1.1;
 font-family: 'League Spartan', sans-serif;
 margin:0 auto;
 text-align:center;
-background-color:#2E0249;
+background-color:#4FD3C4;
 }
 
 .academia-header h1{
@@ -313,11 +326,15 @@ font-family: 'League Spartan', sans-serif;
 font-size:4rem;
 color:white;
 line-height:2;
+margin-bottom:0;
 }
+.edu-bg{
+background: rgb(207,255,236);
+background: linear-gradient(90deg, rgba(207,255,236,1) 0%, rgba(227,167,255,1) 56%, rgba(254,208,255,1) 100%);}
 
 .summary{
 width:50%;
-margin:100px auto 50px;
+margin:0 auto ;
 font-family: 'Dongle', sans-serif;
 }
 
