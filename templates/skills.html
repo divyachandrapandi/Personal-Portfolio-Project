@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>My Portfolio</title>
     <link rel="icon" href="static/images/icon.png?v=2" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
@@ -9,7 +10,7 @@
     <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Merriweather&family=Pacifico&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=League+Spartan&family=Roboto:ital@1&family=Sacramento&display=swap"
           rel="stylesheet">
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -21,23 +22,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
-    <style>
-    body {overflow:scroll;
-    background-color:#DAEAF1;}
-
-
-    </style>
 </head>
 <body>
 
 
-<div class="skills-header container-fluid"
-     style="background-image: url({{ url_for('static', filename='/images/laptopfull.jpg')}});">
+<div class="skills-header container-fluid">
     <nav class="navbar navbar-expand-lg ">
-        <a class="mybrand navbar-brand" href="{{url_for('home')}}">Portfolio</a>
+        <a class="mybrand navbar-brand" href="{{url_for('home')}}">Divya</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="skills-toggle navbar-toggler-icon">|||</span>
+            <span class="skills-toggle navbar-toggler-icon" style="color:white;">|||</span>
         </button>
         <div class="skills-nav collapse navbar-collapse" id="navbarSupportedContent">
 
@@ -48,11 +42,14 @@
                 <li class="mylinks nav-item ">
                     <a class="mypage nav-link" href="{{url_for('about')}}">About </a>
                 </li>
+                 <li class="mylinks nav-item ">
+                    <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>
+                </li>
                 <li class="mylinks nav-item ">
                     <a class="mypage nav-link" href="{{url_for('academia')}}">Academia </a>
                 </li>
                 <li class="mylinks nav-item ">
-                    <a class="mypage nav-link" href="{{url_for('skills')}}">Pro skills </a>
+                    <a class="mypage nav-link" href="{{url_for('contact')}}">Contact </a>
                 </li>
 
             </ul>
@@ -63,13 +60,13 @@
 <div class="project-container container-fluid">
 
     <h3>Web Development</h3>
-    <div class="row grid-element">
+    <div class="project-table row grid-element">
         <div class="col-lg-6">
             <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
                 <img class="project-img" src="{{ url_for('static', filename='/images/portfolio.png')}}">
             </a>
-        </div>
-        <div class="project-set col-lg-6">
+
+        <div class="project-set">
             <br>
             <br>
             <a href="https://github.com/divyachandrapandi/Personal-Portfolio-Project">
@@ -79,14 +76,14 @@
                 for practicing advanced CSS techniques along with WTForms and Flask as Backend Server and hosted using
                 Heroku </p>
         </div>
-    </div>
-    <div class="row grid-element">
+            </div>
+
         <div class="col-lg-6">
             <a href="https://divya-blog.herokuapp.com/">
                 <img class="project-img" src="{{ url_for('static', filename='/images/blog.png')}}">
             </a>
-        </div>
-        <div class="project-set col-lg-6">
+
+        <div class="project-set ">
 
             <br>
             <br>
@@ -102,13 +99,13 @@
                 post</p>
         </div>
     </div>
-    <div class="row grid-element">
+
         <div class="col-lg-6">
             <a href="https://github.com/divyachandrapandi/tindog-Bootstrap-Elements">
                 <img class="project-img" src="{{ url_for('static', filename='/images/tindog.png')}}">
             </a>
-        </div>
-        <div class="project-set col-lg-6">
+
+        <div class="project-set ">
 
 
             <br>
@@ -121,13 +118,13 @@
                 The Bootstrap components such as carousel, cards, containers, navbar are practiced and improvised</p>
         </div>
     </div>
-    <div class="row grid-element">
+
         <div class="col-lg-6">
             <a href="https://github.com/divyachandrapandi/Cafe-CapstoneWTFOrms">
-                <img class="project-img" src="{{ url_for('static', filename='/images/cafe.png')}}">
+                <img id="coffee-img" class="project-img" src="{{ url_for('static', filename='/images/cafe.png')}}">
             </a>
-        </div>
-        <div class="project-set col-lg-6">
+
+        <div class="project-set">
 
             <br>
             <br>
@@ -139,8 +136,8 @@
                 tables, and ofcourse Coffee Price and Taste</p>
         </div>
     </div>
-    <div class="row grid-element">
-        <div class="col-lg-6">
+
+        <div id="movie-col" class="col-lg-6">
             <div id="carouselSlides" class="carousel slide" data-ride="carousel" data-interval="2000"
                  data-pause="hover">
                 <div class="carousel-inner">
@@ -159,8 +156,8 @@
 
                 </div>
             </div>
-        </div>
-        <div class="project-set col-lg-6">
+
+        <div class="project-set ">
 
             <br>
             <br>
@@ -174,8 +171,9 @@
         </div>
     </div>
 </div>
-
+ </div>
 <div class="skills-container container-fluid">
+    <div class="skills-intro container-fluid">
     <h5>Professional Skills</h5>
     <p> I have experimented python, its functionality, dynamic usage, user friendly nature into a set of my
         own projects.I have build this Portfolio website using HTML, CSS and Bootstrap Framework and Flask.
@@ -186,8 +184,9 @@
         <br><br>
         Over 25+ Projects and Task in Python development in GitHub, I practiced and expertised by consistent learning.
     </p>
+</div>
 
-    <div class="skills-list">
+    <div class="skills-list container">
         <h6>Backend Development using Flask</h6>
         <ul>
             <li>

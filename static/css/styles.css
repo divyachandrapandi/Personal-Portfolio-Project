@@ -1,71 +1,68 @@
-html,body{
-   margin:0;
-   height:100%;
-   overflow:hidden;
-   font-family:'Libre Baskerville', serif;
-}
-
-
+/* -----------------------------index-----------------------------*/
 .bg-container{
-background-size:cover;
-background-repeat: no-repeat;
-background-position: top left;
 width:100%;
 height:100%;
-border: 0px solid black;
-box-sizing: border-box;
 }
 
 .index-h1,.index-h2
 {
 color:white;
 line-height:1.25;
+font-weight:900;
+text-shadow: 2px 2px grey;
 }
 
-h1
+.index-h1
 {
 font-size:5rem;
 }
-h2
+.index-h2
 {
 font-size:4rem;
 }
 
-
 .intro{
-margin:12% 18% 18% 12%;
+margin:9% auto auto 12%;
 height:auto;
-position:absolute;
-z-index:2;
 }
 
 .hire-button
 {
-font-family:'Libre Baskerville', serif;
+font-family: 'Dongle', sans-serif;
 margin-top:8px;
-margin-left:12px;
-font-size:2rem;
+padding:1px 12px;;
+font-size:3rem;
 }
-
 
 .mybrand{
 margin:1rem 0  0 2rem;
-font-size:2rem;
+font-size:2.6rem;
+font-family: "Sacramento", cursive;
+font-weight:700;
 color:white;
 }
 
 .mylinks{
 margin-right:3rem;
+color:white;
 }
+
 .mypage{
 font-size: 1.25rem;
+color:white;
 }
+
+.footer{
+text-align:center;
+margin-top:10%;}
+
 .footer-icon{
 color:white;
 margin-top:1rem;
 margin-right:2rem;
 line-height:2;
-font-size:2rem;}
+font-size:2rem;
+margin-left:5%;}
 
 .copyright{
 position:absolute;
@@ -74,106 +71,147 @@ right:5px;
 color:white;
 font-size: 0.75rem;}
 
+/*---------------------index media*/
 
+@media (max-width:900px){
+.intro{
+display:grid;
+margin:25% auto auto;}
+
+.index-h1, .index-h2{
+text-align:center;
+font-size:3rem;
+}
+
+.hire-button{
+font-size:3rem;
+margin:auto;
+}
+
+.mybrand{
+font-size:1.25rem;
+}
+
+.footer{
+margin-top:15%;}
+
+}
+/*------------------about-----------------*/
+.letter-table{
+width:100%;
+margin:5%;
+}
 
 .about-container{
-
-background-size:cover;
-background-repeat: no-repeat;
-background-position: top left;
+background-color:#2E0249;
+text-align:center;
+margin:auto;
 width:100%;
-height:100%;
-border: 0px solid black;
-box-sizing: border-box;
 }
-.profile-pic{
-position:absolute;
-left:0px;
-right:0px;
-top:110px;
-margin-right:auto;
-margin-left:auto;
-width:10%;
-z-index:1;
+
+.about-container h1{
+font-family: "League Spartan", sans-serif;
+font-size:4rem;
+font-weight:800;
+color:white;
 }
 
 .letter-container{
-position:absolute;
-width:50%;
-left:0px;
-right:0px;
-margin: 150px auto auto;
-height:auto;
-background-color:rgba(54,0,125,0.3);
+text-align:center;
+margin:0;
+color:white;
+font-family: 'Dongle', sans-serif;
+background-color:#4C3575;
+}
+
+.profile-pic{
+width:100%;
 }
 
 .letter-container h2{
-text-align:center;
-color:black;
-font-family: 'Merriweather', serif;
 font-weight:700;
 line-height:1.5;
-font-size:3rem;
-color:white;}
+font-size:5rem;
+}
 
 .letter-para{
-color:white;
 text-align:left;
-line-height:2;}
+line-height:1.05;
+font-size:2rem;}
 
 .letter-container h3{
-color:white;
-font-family:'Pacifico', cursive;
+font-family: 'Sacramento', cursive;
 font-size:2rem;
 text-align:right;
 margin-right:25px;
 margin-bottom:25px;
 }
 
+/*media about*/
+@media (max-width:1280px) {
+
+.letter-table{
+margin-left:0;}
+
+.image-container{
+width:50%;
+text-align:center;
+margin:auto;
+padding-bottom:10px;}
+
+.letter-container h2{
+font-size:2.5rem;}
+
+.letter-para{
+text-align:center;
+font-size:1.5rem;
+}
+}
+/*-----------------skills----------------------*/
 .skills-header{
+font-family: "League Spartan", sans-serif;
 margin:0 auto;
-height:70%;
-width:100%;
-background-size:cover;
-background-repeat: no-repeat;
-background-position: center;
+background-color:#2E0249;
 text-align:center;
 }
+
 .skills-header h1{
-font-family: 'Merriweather', serif;
+text-shadow:2px 2px white;
 font-size:4rem;
 color:white;
-line-height:2;
-margin: 8%;
-}
-.skills-toggle{
-color:white;
-}
-
-.skills-nav ul li a {
-color: white;
 }
 
 .project-container{
+font-family: 'League Spartan', sans-serif;
 text-align:center;
 }
-.project-container h3{
 
+.project-container h3{
+font-family: 'League Spartan', sans-serif;
 margin: 50px auto 50px;
 font-weight:900;
 font-size:2.5rem;
-text-decoration:underline;
-color: #371B58;
+text-shadow:2px 2px black;
+}
+
+.project-table{
+margin: 4%;
 }
 
 .project-img{
-width:70%;
+width:100%;
+margin:auto;
+box-shadow:5px 5px 4px black;
+}
+
+#coffee-img{
+padding-bottom:11%;}
+#movie-col{
 margin:auto;
 }
-.project-set h5{
-color:#A91079;
-text-decoration:underline;
-font-weight:800;
+
+#carouselSlides{
+box-shadow:5px 5px 4px black;
 }
 
 .project-img:hover{
@@ -181,80 +219,153 @@ opacity: 0.5;
 }
 
 .project-set{
-width:50%;
+width:90%;
 margin:auto;
 text-align:left;
 }
 
+.project-set h5{
+font-size:1.5rem;
+font-weight:800;
+color: #2E0249;}
+
 .project-set p {
+font-family: 'Dongle', sans-serif;
 color: #13131A;
-line-height:1.75;
+line-height:1;
+font-size:2rem;}
+
+@media (max-width:900px){
+.skills-header h1{
+font-size:2rem;
+text-shadow:0 0;}
+.project-container h3{
+font-size:2rem;
+text-shadow:0px 0px;
 }
 
-.grid-element{
-margin: 100px;
+.project-table{
+margin:1%;}
+
+.project-set{
+text-align:center;
 }
+}
+
+/*----------------------skills ---------------------------*/
 
 .skills-container{
-line-height:1.75;
-font-size:1.05rem;
-width:50%;
+font-family: 'Dongle', sans-serif;
+line-height:1.5;
+font-size:2rem;
+width:100%;
+background-color:pink;
+color:#5534A5;
 }
+
 .skills-container h5{
+font-family: 'League Spartan', sans-serif;
 font-size:2.5rem;
 font-weight:600;
-line-height:2;
+line-height:1;
 text-align:center;
+padding:50px 50px;
 }
 
 .skills-list{
 text-align:left;
+margin:auto;
 }
+
 .skills-list h6{
+font-family:font-family: 'League Spartan', sans-serif;
 fonr-weight:800;
-font-size:1.5rem;
+font-size:2.25rem;
 line-height:2;
+color: #2E0249;
 }
+
+/*-----------------media skills------------------------------*/
+
+@media (max-width:900px)
+{
+.skills-intro h5
+{
+line-height:1;
+}
+
+.skills-container
+{
+line-height:1.1;
+}
+}
+/*----------------academia-------------------------*/
+
 .academia-header{
+font-family: 'League Spartan', sans-serif;
 margin:0 auto;
-height:70%;
-width:100%;
-background-size:cover;
-background-repeat: no-repeat;
-background-position: center;
 text-align:center;
+background-color:#2E0249;
 }
+
 .academia-header h1{
-font-family: 'Merriweather', serif;
+font-family: 'League Spartan', sans-serif;
 font-size:4rem;
 color:white;
 line-height:2;
-margin: 8%;
 }
 
 .summary{
 width:50%;
 margin:100px auto 50px;
-
+font-family: 'Dongle', sans-serif;
 }
 
 .summary h6{
-line-height:1.5;
-font-size:1.5rem;
+line-height:1;
+font-size:3rem;
 text-align:center;}
 
 .edu-container h6{
 text-align:center;
-font-size:2rem;
+font-size:4rem;
 color: #371B58;
 line-height:2;}
 
 .edu-container{
 width:50%;
+font-family: 'Dongle', sans-serif;
+font-size:3rem;
+line-height:1;
+}
+/*-------------------media education-----------------------------*/
+
+@media (max-width:900px){
+.academia-header h1{
+font-size:3rem;}
+
+.summary{
+width:90%;}
+
+.summary h6{
+font-size:2rem;}
+
+.edu-container h6{
+font-size:2.5rem;
 }
 
-.contact-container{
+.edu-container{
+width:90%;
+text-align:center;}
 
+.edu-container p{
+font-size:2rem;
+}
+}
+/*--------------------contact----------------------------*/
+
+.contact-container{
+font-family: 'League Spartan', sans-serif;
 background-size:cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -265,6 +376,7 @@ box-sizing: border-box;
 }
 
 .form-container{
+font-family: 'League Spartan', sans-serif;
 width:50%;
 margin: auto;
 padding: 50px 50px 20px;
@@ -276,11 +388,19 @@ backdrop-filter: blur(7.5px);
 border: 1px solid rgba(255, 255, 255, 1);}
 
 .form-container h4{
-font-family: 'Merriweather', serif;
 font-size:2.5rem;
 text-align:center;
 line-height:2;
 }
+
 .form-container h6{
+font-family: 'League Spartan', sans-serif;
 padding-top:10px;
-line-height:2;}
+line-height:1.5;}
+
+/*-----------media contact-------------------*/
+
+@media (max-width:900px){
+.form-container{
+width:100%;}
+}
