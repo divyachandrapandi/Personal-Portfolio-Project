@@ -133,3 +133,6 @@ font-family: 'League Spartan', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Sacramento', cursive;
 
+background: rgb(225,122,250);
+background: linear-gradient(90deg, rgba(225,122,250,0.8130602582830007) 11%, rgba(149,108,200,0.9559174011401436) 57%, rgba(235,138,244,1) 90%);
+
