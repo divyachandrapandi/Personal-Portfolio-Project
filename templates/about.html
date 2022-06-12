@@ -9,9 +9,8 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="{{url_for('static',filename='css/styles.css')}}" rel="stylesheet"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dongle&family=League+Spartan&family=Roboto:ital@1&family=Sacramento&display=swap"
-          rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&family=Roboto+Condensed&display=swap" rel="stylesheet">
 
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
    
@@ -19,10 +18,10 @@
 
 </head>
 
-<body style="font-family: 'League Spartan', sans-serif;">
+<body style="font-family: 'Roboto Condensed', sans-serif; background-color:#fceaff;">
 
 <div class="about-container container-fluid">
-         <nav class="navbar navbar-expand-lg navbar-dark ">
+         <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="mybrand navbar-brand" href="{{url_for('home')}}">Divya</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,24 +49,24 @@
             </ul>
         </div>
     </nav>
-    <h1>About me</h1>
+    <h1 class="about-h1">ABOUT ME</h1>
 
 </div>
-<div class="letter-table row ">
-    <div class="image-container col-lg-3">
+<div class="letter-table">
+    <div class="image-container">
          <img class = "profile-pic" src="{{ url_for('static', filename='/images/profile.jpg')}}" alt="profile-pic">
     </div>
-    <div class="letter-container col-lg-8 container-fluid">
-            <h2>Hello World</h2>
-            <p class="letter-para"> Vanakkam All!!! I'm a chennai based Python Developer. For a few years,
+    <div class="letter-container">
+
+           <p class="letter-para">  Vanakkam! I'm a chennai based Python Developer. For a few years,
                 I was in quest for my passion but now I'm privileged to announce, Coding is my happiness! I started
                 with Python,
                 became my first love. I am aiming to become a <strong>Full stack web developer</strong> and just near to it.
                 My three secret Mantras - Punctuality, Time Management, Sincerity. Being a developer is wanting of
                 myself in a position to explore new challenges and become better me. I'm in that process of
                 consistency and efficiency. Once a hard phase thought me <strong>Perseverance serves you even
-                    delayed</strong>.If noted, Anything in this world
-                values less than TIME and I have no intention to waste it anymore.</p>
+                    delayed</strong>. If noted, Anything in this world
+                values less than TIME and I have no intention to waste it anymore."</p>
             <h3>Divya Chandrapandi</h3>
     </div>
 

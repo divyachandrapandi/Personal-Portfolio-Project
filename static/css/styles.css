@@ -1,60 +1,133 @@
+/*
+index-page color:
+black and white
+
+about colors
+/* #909dd3*/
+
+
+
+*/
 /* -----------------------------index-----------------------------*/
+
 .bg-container{
 width:100%;
 height:100%;
 }
-
-.index-h1,.index-h2
-{
-color:white;
-line-height:1.25;
-font-weight:900;
-text-shadow: 2px 2px grey;
+/*header */
+.index-nav-list{
+  list-style-type: none;
+  display:flex;
+  gap:4rem;
+  height:auto;
+  justify-content:center;
+  align-items:center;
+  margin-top:10vh;
+  flex-wrap:wrap;
 }
 
-.index-h1
+.index-nav-link{
+text-decoration: none;
+transition:all 500ms ease-out;}
+
+.index-nav-list li a:link, .index-nav-list li a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.index-nav-list li{
+font-size:0.8rem;
+opacity:0.5;}
+
+.index-nav-list li:hover{
+transform:scale(1.5);
+opacity:1;
+}
+
+/*intro paragraph*/
+.intro{
+text-align:center;
+margin:9% auto 7%;
+height:auto;
+width:70%;
+}
+
+.intro h1
 {
+    /*background-image: linear-gradient(0deg, #008fff, #966892, #FF00EF);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;*/
+    color:white;
+    text-transform: uppercase;
+    line-height:1;
+    font-weight:900;
+}
+
+.intro span{
+    color:white;
+    line-height:1;
+    text-transform:uppercase;}
+
+/*  intro ID specifies styling */
+
+#world-h1 {
 font-size:5rem;
 }
-.index-h2
-{
+
+#hello-span{
 font-size:4rem;
 }
 
-.intro{
-margin:9% auto auto 12%;
-height:auto;
+#this-h1{
+font-size:4rem;
 }
 
-.hire-button
-{
-font-family: 'Dongle', sans-serif;
-margin-top:8px;
-padding:1px 12px;;
+#is-span{
 font-size:3rem;
 }
 
-.mybrand{
-margin:1rem 0  0 2rem;
-font-size:2.6rem;
-font-family: "Sacramento", cursive;
-font-weight:700;
-color:white;
+#web-h1{
+font-size:6rem;
 }
 
-.mylinks{
-margin-right:3rem;
-color:white;
+#as-span{
+font-size:3rem;
 }
 
-.mypage{
-font-size: 1.25rem;
+
+.hire-button
+{
 color:white;
+margin-top:8px;
+padding:1px 12px;;
+font-size:2rem;
+font-weight:800;
+position:relative;
+}
+
+.hire-button::after{
+position:absolute;
+content:"";
+top:0;
+bottom:0;
+right:0;
+left:0;
+background:white;
+opacity:0.2;
+transform:scale(0);
+transition:transform 3ms linear;
+}
+
+.hire-button:hover::after{
+transform:scale(1);
 }
 
 .footer{
 text-align:center;
-margin-top:10%;}
+margin-top:5%;}
 
 .footer-icon{
 color:white;
@@ -62,7 +135,23 @@ margin-top:1rem;
 margin-right:2rem;
 line-height:2;
 font-size:2rem;
-margin-left:5%;}
+margin-left:5%;
+transform:scale(1);
+transition: all 300ms ease-out;
+}
+
+.footer-icon:hover
+{
+transform:scale(2);
+/*
+background-image: linear-gradient(0deg, #008fff, #966892);
+background-size: 100%;
+border-radius:50%;
+*/}
+
+#linkedin:hover{
+border-radius:100%;
+}
 
 .copyright{
 position:absolute;
@@ -73,287 +162,562 @@ font-size: 0.75rem;}
 
 /*---------------------index media*/
 
-@media (max-width:900px){
-.intro{
-display:grid;
-margin:25% auto auto;}
+@media (max-width:650px){
+.index-nav-list{
+padding:0;
+gap:1rem;
+}
 
-.index-h1, .index-h2{
-text-align:center;
-font-size:3rem;
+.intro{
+margin:15% auto 15%;}
+
+#world-h1 {
+font-size:2rem;
+}
+
+#hello-span{
+font-size:1.5rem;
+}
+
+#this-h1{
+font-size:1.5rem;
+}
+
+#is-span{
+font-size:1rem;
+}
+
+#web-h1{
+font-size:2.5rem;
+}
+
+#as-span{
+font-size:1rem;
 }
 
 .hire-button{
-font-size:3rem;
+
+font-size:1.25rem;
+line-height:1.5;
 margin:auto;
 }
 
-.mybrand{
-font-size:1.25rem;
-}
 
 .footer{
-margin-top:15%;}
+margin-top:30%;
+}
 
 }
-/*------------------about-----------------*/
-.letter-table{
-width:100%;
-margin:5%;
+.footer-icon{
+font-size:1.5rem;
 }
+
+/*other page navbar*/
+.mybrand{
+background-image: linear-gradient(90deg, #694f7d, #007b67);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    margin:1rem 0  0 2rem;
+    font-size:3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:900;
+
+}
+
+@media (max-width:700px){
+    .mybrand{
+        font-size:1.5rem;
+        margin: 0.5rem 0 0 1rem;}}
+
+.mylinks{
+margin-right:3rem;
+font-weight:900;
+text-transform:uppercase;
+background-image: linear-gradient(0deg, #008fff, #966892);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+
+}
+
+
+.mypage{
+font-size: 1.25rem;
+
+}
+
+/*------------------about-----------------*/
+
 
 .about-container{
-background-color:#2E0249;
-text-align:center;
-margin:auto;
-width:100%;
+
+    text-align:center;
+    margin-inline:0;
+    margin: auto 0;
+    width:100%;
+    padding:0;
 }
 
-.about-container h1{
-font-family: "League Spartan", sans-serif;
-font-size:4rem;
-font-weight:800;
-color:white;
+.about-h1{
+    display:inline-block;
+    position:relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size:4rem;
+    font-weight:900;
+    color:#3a54c2;
+    background-color: #fceaff;
+    padding:0 10px;
+}
+
+.about-h1:after{
+    content:"";
+    display:block;
+    position:absolute;
+    bottom:50%;
+    left:50%;
+    background-color:#6d56c0;
+    width:90%;
+    height:100%;
+    z-index:-2;
+    transform:translate(-50%,50%);
+    width:100vw;
+}
+
+.letter-table{
+    width:90%;
+    display:flex;
+
+    flex-wrap:wrap;
+    margin: 5% auto;
+
 }
 
 .letter-container{
-text-align:center;
-margin:0;
-color:white;
-font-family: 'Dongle', sans-serif;
-background-color:#4C3575;
+    margin:auto;
+    margin-left:2%;
+
+
+    flex:1;
+    width:90%;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .profile-pic{
-width:100%;
-}
-
-.letter-container h2{
-font-weight:700;
-line-height:1.5;
-font-size:5rem;
+    width:100%;
 }
 
 .letter-para{
-text-align:left;
-line-height:1.05;
-font-size:2rem;}
+    line-height:1.5;
+    font-size:1.5rem;
+    font-weight:590;
+}
 
 .letter-container h3{
-font-family: 'Sacramento', cursive;
-font-size:2rem;
-text-align:right;
-margin-right:25px;
-margin-bottom:25px;
+
+    font-size:1.45rem;
+    text-align:right;
+     font-weight:590;
+    margin-right:25px;
+    margin-bottom:25px;
 }
 
 /*media about*/
-@media (max-width:1280px) {
 
-.letter-table{
-margin-left:0;}
+@media (max-width :1000px)
+ {
 
-.image-container{
-width:50%;
-text-align:center;
-margin:auto;
-padding-bottom:10px;}
+    .about-h1{
+        font-size:3rem;
+        }
 
-.letter-container h2{
-font-size:2.5rem;}
+    .profile-pic{
+        width:80%;
+        margin:3%;
+        }
+    .image-container{
+        width:50%;
+        margin:auto;
+        padding-bottom:10px;
+        }
 
-.letter-para{
-text-align:center;
-font-size:1.5rem;
+    .letter-para{
+        text-align:justify;
+        font-size:1.15rem;
+        }
 }
+
+@media (max-width:900px)
+{
+    .about-h1{
+        font-size:2.7rem;
+        }
+
+    .about-h1::after{
+        height:90%;
+        }
+
+    .letter-table{
+        flex-direction:column;
+    }
+
+    .image-container{
+        width:50%;
+        margin:auto;
+        padding-bottom:10px;
+        }
+
+    .letter-para{
+        text-align:justify;
+        font-size:1.15rem;
+    }
 }
-/*-----------------skills----------------------*/
+/*-----------------project & skills----------------------*/
 .skills-header{
-font-family: "League Spartan", sans-serif;
-margin:0 auto;
-background-color:#7A0BC0;
-text-align:center;
+    font-family: 'Montserrat', sans-serif;
+    margin:0 auto;
+    text-align:center;
+
 }
 
 .skills-header h1{
-text-shadow:2px 2px white;
-font-size:4rem;
-color:white;
-margin-bottom:0;
+    color:#008a63;
+    font-size:4rem;
+    margin-bottom:0;
+    font-weight:900;
+    position:relative;
+    display:inline-block;
+    background-color:#d9eddf;;
+    padding: 0 15px;
+}
+.skills-container{
+background-color:white;}
+.skills-header h1::after{
+    position:absolute;
+    content:"";
+    width:100%;
+    height:100%;
+    left:50%;
+    top:-50%;
+    width:100vw;
+    transform:translate(-50%,50%);
+    bottom:0;
+    background-color:#00704b;
+    z-index:-1;
 
 }
 
 .project-container{
-font-family: 'League Spartan', sans-serif;
-text-align:center;
-background: rgb(225,122,250);
-background: linear-gradient(90deg, rgba(225,122,250,0.8130602582830007) 11%, rgba(149,108,200,0.9559174011401436) 57%, rgba(235,138,244,1) 90%);
+    font-family: 'Montserrat', sans-serif;
+    text-align:center;
 
-}
+    }
 
 .project-container h3{
-font-family: 'League Spartan', sans-serif;
-margin:auto;
-font-weight:500;
-font-size:2.5rem;
-text-shadow:2px 2px black;
-padding-top:50px;
-}
+    font-family: 'Montserrat', sans-serif;
+    margin:auto;
+    font-weight:900;
+    font-size:2.5rem;
+    padding-top:50px;
+    padding-bottom:30px;
+    color:#008a63;
+    }
 
 .project-table{
-margin: 4%;
-
-}
+    margin: 4%;
+    }
 
 .project-img{
-width:100%;
-margin:auto;
-box-shadow:5px 5px 4px black;
-}
+    width:100%;
+    margin:auto;
+    box-shadow:15px 5px 8px #47817f;
+    }
 
 #coffee-img{
-padding-bottom:11%;}
+    padding-bottom:11%;
+    }
+
 #movie-col{
-margin:auto;
-}
+    margin:auto;
+    }
 
 #carouselSlides{
-box-shadow:5px 5px 4px black;
-}
+    box-shadow:15px 5px 8px #47817f;
+
+    }
 
 .project-img:hover{
-opacity: 0.5;
-}
+    opacity: 0.5;
+    }
 
 .project-set{
-width:90%;
-margin:auto;
-text-align:left;
-}
+    width:90%;
+    height:100%;
+    margin:5%;
+    text-align:left;
+    }
 
 .project-set h5{
-font-size:1.5rem;
-font-weight:800;
-color: #2E0249;}
+    font-size: 1.25rem;
+    font-weight:900;
+    color:#008a63;
+    text-transform:uppercase;
+    }
 
 .project-set p {
-font-family: 'Dongle', sans-serif;
-color: #13131A;
-line-height:1;
-font-size:2rem;}
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height:1.5;
+    font-size:1.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    }
 
-@media (max-width:900px){
+@media (max-width:1000px){
 .skills-header h1{
 font-size:2rem;
-text-shadow:0 0;}
+
+}
+
 .project-container h3{
-font-size:2rem;
-text-shadow:0px 0px;
+font-size:1.75rem;
+
 }
 
-.project-table{
-margin:1%;}
-
-.project-set{
-text-align:center;
+..project-set h6{
+font-size: 1.5rem;}
+.project-set p {
+font-size:1.25rem;
 }
+}
+@media (max-width:600px){
+    .skills-header h1{
+        font-size:1.25rem;
+        font-weight:900;}       }
+
+    .project-container h3{
+        font-size:2rem;
+        font-weight:900;
+        }
+
+    .project-set h6 {
+        font-size:1.65rem;
+        }
+
+    .project-set p {
+        font-size:1.25rem;
+        }
+
+
+    .project-table{
+        margin:1%;
+        }
+
+    .project-set{
+        text-align:center;
+        }
 }
 
 /*----------------------skills ---------------------------*/
 
 .skills-container{
-font-family: 'Dongle', sans-serif;
-line-height:1.5;
-font-size:2rem;
-width:100%;
-
-color:#5534A5;
-}
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height:1.5;
+    font-size:2rem;
+    width:100%;
+    }
 
 .skills-intro h5{
-font-family: 'League Spartan', sans-serif;
-font-size:2.5rem;
-font-weight:600;
-line-height:1;
-text-align:center;
-padding:50px 50px;
-}
+    font-family: 'Montserrat', sans-serif;
+    font-size:2rem;
+    font-weight:600;
+    line-height:1;
+    text-align:center;
+    padding:50px 50px;
+    color:#008a63;
+      }
+
 .skills-intro {
-background-color:white;
-}
+    width:75%;
+    font-size:1.5rem;
+    text-align:justify;
+    }
+
+.skill-bg{
+    margin-bottom:2%;
+    }
 
 .skills-list{
-text-align:left;
-margin:auto;
-color:white;
-}
+    display:flex;
+    flex-wrap:wrap;
+    text-align:left;
+    font-size:1.2rem;
+    margin-inline:auto;
+    }
+
+.skill-set{
+    width:70%;
+
+    display:inline-block;
+    flex:1 1 30rem;
+    }
+
+.skills-list ul{
+    display:inline-block;
+    margin-inline:5%;
+    list-style-type: none;
+    counter-reset:skills-counter;
+    }
+
+.skills-list li{
+    position:relative;
+    line-height:1.5;
+    }
+
+.skills-list li:before{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    counter-increment:skills-counter;
+    content:counter(skills-counter);
+    position:absolute;
+    width:1em;
+    height:1em;
+    left:-2em;
+    bottom:30%;
+    font-size:1rem;
+    border-radius:50%;
+    color:white;
+    background-color:black;
+    }
 
 .skills-list h6{
-font-family:font-family: 'League Spartan', sans-serif;
-fonr-weight:800;
-font-size:2.25rem;
-line-height:2;
-color: white;
-}
-.skill-bg{
-background: rgb(255,111,174);
-background: radial-gradient(circle, rgba(255,111,174,1) 0%, rgba(232,75,75,1) 56%, rgba(166,77,146,1) 100%);}
+    font-family:font-family: 'League Spartan', sans-serif;
+    fonr-weight:800;
+    font-size:1.75rem;
+    text-align:center;
+    line-height:1.5;
+    color:#008a63;
+
+    }
+#skill-set1,#skill-set3,#skill-set5{
+background-color:#e9fdfc;}
+#skill-set2,#skill-set4,#skill-set6{
+background-color:#f3eada;}
+
+
+
 /*-----------------media skills------------------------------*/
 
-@media (max-width:900px)
+@media (max-width:1000px)
 {
-.skills-intro h5
-{
-line-height:1;
+    .skills-intro h5
+    {
+     font-size:1.5rem;
+
+    }
+    .skills-intro{
+        line-height:1.5;
+        width:85%;}
+
+    .skills-container
+    {
+        line-height:1.1;
+    }
 }
 
-.skills-container
-{
-line-height:1.1;
-}
+@media (max-width:600px){
+    .skills-intro h5 {
+        font-size:1.5rem;
+        }
+
+    .skills-intro{
+        width:95%;
+        }
+
+    .skills-intro p {
+        font-size: 1.15rem;
+        line-height:1.5;
+        }
+
+    .skill-set h6{
+        line-height:1;
+        font-size:1.5rem;
+        }
+
+    .skill-set ul{
+        line-height:1;
+        font-size:1.25rem;
+        }
+
 }
 /*----------------academia-------------------------*/
 
 .academia-header{
-font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
 margin:0 auto;
 text-align:center;
-background-color:#4FD3C4;
+
 }
 
 .academia-header h1{
-font-family: 'League Spartan', sans-serif;
+text-transform:uppercase;
 font-size:4rem;
-color:white;
+font-weight:900;
 line-height:2;
 margin-bottom:0;
+position:relative;
+display:inline-block;
+background-color:#e8efff;;
+padding:0 10px;
+color:#0069d6;
+
 }
-.edu-bg{
-background: rgb(207,255,236);
-background: linear-gradient(90deg, rgba(207,255,236,1) 0%, rgba(227,167,255,1) 56%, rgba(254,208,255,1) 100%);}
+
+.edu-h1::after{
+position:absolute;
+content:"";
+width:100%;
+height:60%;
+background-color:#0051ba;
+left:50%;
+top:-15%;
+transform:translate(-50%,50%);
+width:100vw;
+z-index:-1;
+
+}
 
 .summary{
-width:50%;
-margin:0 auto ;
-font-family: 'Dongle', sans-serif;
+
+width:70%;
+margin:5% auto ;
+
 }
 
 .summary h6{
-line-height:1;
-font-size:3rem;
-text-align:center;}
+line-height:1.5;
+font-size:1.5rem;
+text-align:justify;}
 
 .edu-container h6{
-text-align:center;
-font-size:4rem;
-color: #371B58;
+text-align:left;
+font-size:2rem;
+font-weight:900;
+color:#0069d6;
 line-height:2;}
 
 .edu-container{
-width:50%;
-font-family: 'Dongle', sans-serif;
-font-size:3rem;
-line-height:1;
+width:70%;
+
+font-size:1.5rem;
+line-height:1.5;
 }
 /*-------------------media education-----------------------------*/
 
@@ -361,28 +725,32 @@ line-height:1;
 .academia-header h1{
 font-size:3rem;}
 
+.edu-h1::after{
+height:70%;
+top:-30%;}
+
 .summary{
 width:90%;}
 
 .summary h6{
-font-size:2rem;}
+font-size:1.25rem;}
 
 .edu-container h6{
-font-size:2.5rem;
+font-size:2rem;
 }
 
 .edu-container{
 width:90%;
-text-align:center;}
+}
 
 .edu-container p{
-font-size:2rem;
+font-size:1.24rem;
 }
 }
 /*--------------------contact----------------------------*/
 
 .contact-container{
-font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
 background-size:cover;
 background-repeat: no-repeat;
 background-position: center;
@@ -393,7 +761,7 @@ box-sizing: border-box;
 }
 
 .form-container{
-font-family: 'League Spartan', sans-serif;
+font-family: 'Montserrat', sans-serif;
 width:50%;
 margin: auto;
 padding: 50px 50px 20px;

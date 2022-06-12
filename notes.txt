@@ -142,3 +142,6 @@ background: radial-gradient(circle, rgba(255,111,174,1) 0%, rgba(232,75,75,1) 56
 background: rgb(207,255,236);
 background: linear-gradient(90deg, rgba(207,255,236,1) 0%, rgba(227,167,255,1) 56%, rgba(254,208,255,1) 100%);
 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto Condensed', sans-serif;
