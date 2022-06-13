@@ -249,9 +249,12 @@ background-image: linear-gradient(0deg, #008fff, #966892);
 
 
 .mypage{
-font-size: 1.25rem;
+font-size: 1.05rem;
 
 }
+@media (max-width:800px){
+.mypage{
+font-size: 0.75rem;}}
 
 /*------------------about-----------------*/
 
@@ -720,10 +723,9 @@ font-size:1.5rem;
 line-height:1.5;
 }
 /*-------------------media education-----------------------------*/
-
 @media (max-width:900px){
 .academia-header h1{
-font-size:3rem;}
+font-size:2rem;}
 
 .edu-h1::after{
 height:70%;
@@ -733,10 +735,10 @@ top:-30%;}
 width:90%;}
 
 .summary h6{
-font-size:1.25rem;}
+font-size:1.5rem;}
 
 .edu-container h6{
-font-size:2rem;
+font-size:1.85rem;
 }
 
 .edu-container{
@@ -744,7 +746,34 @@ width:90%;
 }
 
 .edu-container p{
-font-size:1.24rem;
+font-size:1.5rem;
+}}
+
+
+@media (max-width:600px){
+.academia-header h1{
+font-size:1.25rem;}
+
+.edu-h1::after{
+height:70%;
+top:-30%;}
+
+.summary{
+width:90%;}
+
+.summary h6{
+font-size:1.05rem;}
+
+.edu-container h6{
+font-size:1.25rem;
+}
+
+.edu-container{
+width:90%;
+}
+
+.edu-container p{
+font-size:1.05rem;
 }
 }
 /*--------------------contact----------------------------*/
